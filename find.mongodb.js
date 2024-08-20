@@ -5,7 +5,7 @@ const database = "BD3-Alex-Aula"
 const collection = "livraria"
 
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
-use (database);
+use(database);
 
-/* CRIAR UMA COLEÇÃO DE DADOS*/ 
-db.collection(collection);
+/*SELECIONA TODOS REGISTROS NA COLEÇÃO DE DADOS: */
+db[collection].find()
