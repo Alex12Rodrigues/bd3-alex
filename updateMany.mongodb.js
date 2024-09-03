@@ -7,11 +7,11 @@ const collection = "livraria"
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
 use(database);
 
-/* ALTERA OS DADOS DE UM ÚNICO DOCUMENTO DA COLLECTION */
-db[collection].updateOne(
-    {titulo: "As Cavernas de Aço"},
+/* ALTERA OS DADOS DE TODOS OS DOCUMENTO DA COLLECTION */
+db[collection].updateMany(
+    {autor: "J.R.R Tolkien"},
 
-    {$set: {valor: "250"}}
+    {$set: {autor: "Jonh Ronald Reuel Tolkien"}}
 
 );
 

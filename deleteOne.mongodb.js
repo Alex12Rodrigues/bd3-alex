@@ -7,12 +7,10 @@ const collection = "livraria"
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
 use(database);
 
-/* ALTERA OS DADOS DE UM ÚNICO DOCUMENTO DA COLLECTION */
-db[collection].updateOne(
-    {titulo: "As Cavernas de Aço"},
+db[collection].deleteOne(
 
-    {$set: {valor: "250"}}
-
-);
+    {codigo:"9"}
 
 
+
+)
